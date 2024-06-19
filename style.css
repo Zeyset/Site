@@ -5,6 +5,24 @@ body{
     color: #000;
     
 }
+nav.menu-desktop{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav.menu-mobile{
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  nav.menu-desktop{
+    display: none;
+  }
+  nav.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 /*Entête*/
 header{
     background-color: fuchsia;
